@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: okwxqhh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: okwxqhh
+  template:
+    metadata:
+      labels:
+        app: okwxqhh
+    spec:
+      containers:
+      - image: okteto.dev/okwxqhh:latest
+        name: okwxqhh
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "d66c1ba7-5771-4779-a337-994792fb1f3b"
+        - name: Vless_Path
+          value: "/kih856"
+        - name: Vmess_UUID
+          value: "87c4747d-1ccd-4f64-a6b1-a38d6256b973"
+        - name: Vmess_Path
+          value: "/fgt956"
+        - name: Share_Path
+          value: "/v2link"
